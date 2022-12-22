@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <h1>TESTIMONIALS</h1>
+
+        <div class="container">
+
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+
+            <div class="testimonials">
+
+                <div class="slide-row " id="slide">
+
+                    <div class="slide-col">
+
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur itaque,
+                                debitis fuga et nostrumecati laborum sint fugit, adipisci eligendi velit
+                                accusantium? Veniam, accusantium dolorem!</p>
+                            <h3>Muhammad Aly</h3>
+                            <p>Aly.com</p>
+                        </div>
+
+                        <div class="user-img">
+                            <img src="/1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slide-col">
+
+                        <div class="user-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos esse ratione, in voluptas
+                                officia repudiandae re, sunt minus voluptates obcaecati nam officiis dolores
+                                unde nesciunt? Quia, quod beatae!</p>
+                            <h3>Muhammad Aly</h3>
+                            <p>Aly.com</p>
+                        </div>
+
+                        <div class="user-img">
+                            <img src="/2.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slide-col">
+
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, rerum porro blanditiis
+                                at quia animi volnon dolores corrupti reiciendis ipsa numquam in nesciunt
+                                dignissimos quos sit cumque exercitationem. Nihil.</p>
+                            <h3>Muhammad Aly</h3>
+                            <p>Aly.com</p>
+                        </div>
+
+                        <div class="user-img">
+                            <img src="/3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slide-col">
+
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, numquam, quidem
+                                asperiores, teneilique cum odit placeat temporibus totam repellendus voluptas
+                                nulla facere, soluta eum tempore culpa?</p>
+                            <h3>Muhammad Aly</h3>
+                            <p>Aly.com</p>
+                        </div>
+
+                        <div class="user-img">
+                            <img src="/4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slide-col">
+
+                        <div class="user-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus id optio
+                                architecto aspernatur erferendis. Eveniet repellat officia qui esse soluta ullam
+                                eum consequuntur, recusandae sequi cupiditate est.</p>
+                            <h3>Muhammad Aly</h3>
+                            <p>Aly.com</p>
+                        </div>
+
+                        <div class="user-img">
+                            <img src="/5.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------JavaScript----------------------- -->
+
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick=function(){
+            slide.style.transform="translateX(0px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        
+        btn[1].onclick=function(){
+            slide.style.transform="translateX(-800px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        
+        btn[2].onclick=function(){
+            slide.style.transform="translateX(-1600px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        
+        btn[3].onclick=function(){
+            slide.style.transform="translateX(-2400px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        
+        btn[4].onclick=function(){
+            slide.style.transform="translateX(-3200px)";
+            for(i=0;i<5;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
